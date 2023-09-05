@@ -1,0 +1,42 @@
+/* Apply the background gradient */
+body {
+    background: linear-gradient(45deg, white 0%, white 33%, lightpink 33%, lightpink 66%, lightblue 66%, lightblue 100%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Center the login, register, and forgot password boxes */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Style the box with rounded corners and a border */
+.form-box {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Apply additional styles to form elements */
+.form-label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: lightblue;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #007BFF;
+}
+
+.reg:hover {
+    color: red;
+}
