@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Button -->
+<div class="container">
+  <h2>Button States</h2>
+  <button type="button" class="btn btn-primary">Primary Button</button>
+  <button type="button" class="btn btn-primary active">Active Primary</button>
+  <button type="button" class="btn btn-primary disabled">Disabled Primary</button>
+</div>
+<hr>
+
+<!--Dropdowns-->>
+<div class="container">
+    <h2>Dropdowns</h2>
+    <p>The .active class adds a blue background color to the active link.</p>
+    <p>The .disabled class disables a dropdown item (grey text color).</p>
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Normal</a></li>
+        <li class="disabled"><a href="#">Disabled</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li><a href="#">Normal</a></li>
+      </ul>
+    </div>
+</div>
+  <hr>
+
+  <!--List Groups-->>
+  <div class="container">
+    <h2>Active Item in a List Group</h2>
+    <div class="list-group">
+      <a href="#" class="list-group-item active">First item</a>
+      <a href="#" class="list-group-item">Second item</a>
+      <a href="#" class="list-group-item">Third item</a>
+    </div>
+</div>
+<hr>
+
+<!--pagination-->
+<div class="container">
+    <h2>Pagination - Active State</h2>
+    <ul class="pagination">
+      <li class="active"><a href="#">1</a></li>
+      <li ><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+    </ul>
+</div>
+<hr>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+    </div>
+  </nav>
+    
+  <div class="container">
+    <h3>Basic Navbar Example</h3>
+    <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+</div>
+<hr>
+
+<!-- table -->
+<div class="container">
+  <h2>Contextual Classes</h2>
+  <p>Contextual classes can be used to color table rows or table cells. The classes that can be used are: .active, .success, .info, .warning, and .danger.</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Default</td>
+        <td>Defaultson</td>
+        <td>def@somemail.com</td>
+      </tr>      
+      <tr class="success">
+        <td>Success</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr class="danger">
+        <td>Danger</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr class="info">
+        <td>Info</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+      <tr class="warning">
+        <td>Warning</td>
+        <td>Refs</td>
+        <td>bo@example.com</td>
+      </tr>
+      <tr class="active">
+        <td>Active</td>
+        <td>Activeson</td>
+        <td>act@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<hr>
+
+<!-- Progress bars -->
+<div class="container">
+  <h2>Animated Progress Bar</h2>
+  <p>The .active class animates the progress bar:</p> 
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+      40%
+    </div>
+  </div>
+</div>
+<hr>
+<!-- affix -->
+<div class="container-fluid" style="background-color:#2196F3;color:#fff;height:200px;">
+  <h1>Bootstrap Affix Example</h1>
+  <h3>Fixed (sticky) vertical sidenav on scroll</h3>
+  <p>Scroll this page to see how the left navigation menu behaves with data-spy="affix".</p>
+  <p><strong>The left menu sticks to the page when you have scrolled a specified amount of pixels.</strong></p>
+</div>
+<br>
+
+<div class="container">
+  <div class="row">
+    <nav class="col-sm-3">
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+        <li class="active"><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+      </ul>
+    </nav>
+    <div class="col-sm-9">
+      <h1>Some text to enable scrolling</h1>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+</body>
+</html>
